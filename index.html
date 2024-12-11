@@ -8,25 +8,65 @@
     </head>
     <body>
         <main>
-            <div class="user-interface">
-                <div><h1>Claw Machine</h1></div>
-                <div class="timer"><h2>Time Left</h2></div>
-                <div class="collectibles"><h2>Collectibles</h2></div>
-            </div>
-            <div class="claw-machine">
-                <div class="claw"></div>
-                <div class="start-button"></div>
-                <div class="move-button"></div>
+            <div class="grid-container">
+
+                <div class="user-interface">
+                    <div class="title">
+                        <h1>Claw Machine</h1>
+                        <div class="instructions">
+                            <p>Collect all the cool stuff before the time runs
+                                out!</p>
+                        </div>
+                    </div>
+
+                    <div class="timer">
+                        <h2>Time Left</h2>
+                        <div class="time">00:00</div>
+                    </div>
+
+                    <div class="collected">
+                        <h2>Collectibles</h2>
+                        <div class="collectibles-collection">
+                            <div class="collectible" id="collectible1"></div>
+                            <div class="collectible" id="collectible2"></div>
+                            <div class="collectible" id="collectible3"></div>
+                            <div class="collectible" id="collectible4"></div>
+                            <div class="collectible" id="collectible5"></div>
+                            <div class="collectible" id="collectible6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="claw-machine">
+                    <div class="machine-top"></div>
+                    <div class="claw">
+                        <div class="claw-hand"></div>
+                    </div>
+
+                    <div class="prizes"></div>
+
+                    <div class="controls">
+                        <div class="start">
+                            <button class="start-button">GO</button>
+                        </div>
+                        <div class="move">
+                            <button id="move-left" class="btn">Move
+                                Left</button>
+                            <button id="move-right" class="btn">Move
+                                Right</button>
+                            <button id="drop-claw" class="btn">Drop
+                                Claw</button>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </main>
+
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"></script>
         <script src='js/scripts.js'></script>
     </body>
-    <footer>
-        <p>© NMED3520 Exercise #3 2024</p>
-        <p><a href="https://github.com/riccirich/claw-machine">Github
-                Repository</a></p>
-    </footer>
 </html>
