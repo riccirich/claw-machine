@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #1a1a1a;
+    background-color: #A5ACDF;
     color: #f4f4f4;
     font-family: Arial, sans-serif;
 }
@@ -27,7 +27,6 @@ body {
 }
 
 .user-interface {
-    background-color: #3a3a3a;
     color: white;
     padding: 24px;
     margin: 50px;
@@ -44,16 +43,17 @@ body {
 .collectible {
     width: 100px;
     height: 100px;
-    background-color: #666;
+    background-color: #e9438062;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.5;
 }
 
 .claw-machine {
-    background-color: #4a4a4a;
+    background-image: url('../images/machine.png');
+    background-size: cover;
+    background-position: center;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -61,7 +61,7 @@ body {
 
 .controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -71,16 +71,13 @@ body {
 .machine-top {
     width: 100%;
     height: 50px;
-    background-color: #2a2a2a;
+    background-color: #FBA7C6;
     position: absolute;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
 }
 
-.claw { /* need image */
+.claw {
+    /* need image */
     width: 80px;
     height: 30px;
     background-color: #888;
@@ -92,7 +89,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.claw-hand { /* need image */
+.claw-hand {
+    /* need image */
     width: 10px;
     height: 50px;
     background-color: #666;
@@ -100,16 +98,47 @@ body {
     bottom: -50px;
 }
 
+.start-button {
+    padding: 10px 10px;
+    background-color: #f80b82;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .btn {
     padding: 10px 20px;
-    background-color: #5cb85c;
+    background-color: #E94380;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
+
 .btn:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e9438085;
+    border-radius: 24px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8a2b4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -12,16 +12,16 @@
 
                 <div class="user-interface">
                     <div class="title">
-                        <h1>Claw Machine</h1>
+                        <h1>My First Claw Machine</h1>
                         <div class="instructions">
                             <p>Collect all the cool stuff before the time runs
-                                out!</p>
+                                out! <br>Refresh the page to RESET.</p>
                         </div>
                     </div>
 
                     <div class="timer">
                         <h2>Time Left</h2>
-                        <div class="time">00:00</div>
+                        <div id="time">00:00</div>
                     </div>
 
                     <div class="collected">
@@ -35,12 +35,21 @@
                             <div class="collectible" id="collectible6"></div>
                         </div>
                     </div>
+
+                    <div class="info">
+                        <p>Made for NMED3520</p>
+                        <p>Ricci Dagta <a
+                                href="https://github.com/riccirich/claw-machine">Github
+                                Repository</a></p>
+
+                    </div>
+
                 </div>
 
-                <div class="claw-machine">
+                <div class="claw-machine" id="machine">
                     <div class="machine-top"></div>
                     <div class="claw">
-                        <div class="claw-hand"></div>
+                        <div class="claw-hand" id="hand"></div>
                     </div>
 
                     <div class="prizes"></div>
@@ -61,6 +70,10 @@
 
                 </div>
 
+            </div>
+            <div id="popup">
+                <p id="popup-message"></p>
+                <button id="popup-close">Close</button>
             </div>
         </main>
 
