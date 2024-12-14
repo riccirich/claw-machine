@@ -50,7 +50,7 @@ function moveClaw(direction) {
     } else if (direction === 'right' && clawPosition < collectibles.length - 1) {
         clawPosition++;
     }
-    console.log(`Claw position: ${clawPosition}`); // For debugging
+    console.log(`Claw position: ${clawPosition}`);
 }
 
 function dropClaw() {
